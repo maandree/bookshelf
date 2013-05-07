@@ -24,7 +24,7 @@ if [ -x "$PDF_VIEWER" ]; then
 fi
 
 i=1
-ls | grep "$*" --colour=always 2>/dev/null | while read f; do
+ls | grep "$*" --colour=always | while read f; do
     echo -en "\033[01;34m${i}\033[21m: \033[00m"
     echo "$f"
     (( i++ ))
@@ -33,5 +33,5 @@ done
 echo -n 'Select book by index: '
 read i
 
-"$pdfviewer" "$(ls | grep "$*" 2>/dev/null | head --lines="$i" | tail --lines 1)"
+"$pdfviewer" "$(ls | grep "$*" | head --lines="$i" | tail --lines 1)"
 
