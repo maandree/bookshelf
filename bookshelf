@@ -21,6 +21,8 @@
 pdfviewer=xpdf
 if [ -x "$PDF_VIEWER" ]; then
     pdfviewer="$PDF_VIEWER"
+elif [ "$TERM" = "linux" ]; then
+    pdfviewer=jfbview
 fi
 
 i=1
