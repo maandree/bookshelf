@@ -1,0 +1,9 @@
+Type `bookshelf` followed by a `grep` expression in the directory with
+to book you are looking with. Then type the index of the correcty book
+and it will be opened.
+
+This is very useful if you want do not know the exact name of the book
+or looking for an author, or if the filename starts with the author,
+but you do know now how that is; and you have a lot of books in some
+categories.
+
