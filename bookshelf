@@ -19,8 +19,8 @@
 # 
 
 pdfviewer=xpdf
-if [ -x "$PDF_VIEWER" ]; then
-    pdfviewer="$PDF_VIEWER"
+if [ "$PDFVIEWER" != "" ]; then
+    pdfviewer="$PDFVIEWER"
 elif [ "$TERM" = "linux" ]; then
     pdfviewer=jfbview
 fi
