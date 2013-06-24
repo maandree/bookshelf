@@ -6,3 +6,7 @@ _/
 *.bak
 *.swp
 *.swo
+*.info
+*.gz
+*.pdf
+*.ps
