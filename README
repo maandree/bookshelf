@@ -7,3 +7,7 @@ or looking for an author, or if the filename starts with the author,
 but you do know now how that is; and you have a lot of books in some
 categories.
 
+By default xpdf used for opening the document, if $TERM=linux, then
+jfbview is used. If you want another viewer, export that command to
+PDFVIEWER.
+
