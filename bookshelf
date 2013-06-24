@@ -35,5 +35,5 @@ done
 echo -n 'Select book by index: '
 read i
 
-"$pdfviewer" "$(ls | grep "$*" | head --lines="$i" | tail --lines 1)"
+$pdfviewer "$(ls | grep "$*" | head --lines="$i" | tail --lines 1)"
 
